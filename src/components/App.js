@@ -50,6 +50,18 @@ function App() {
 
   return (
     <main>
+      <header ClassName='header'>
+        <h2 className='search_adalaber'>Buscar una Adalaber:</h2>
+        <input
+          className='search'
+          type='text'
+          name='search'
+          id='search'
+          placeholder='Busque una Adalaber'
+          value='search'
+        />
+      </header>
+
       <h1 className='title'>Adalabers</h1>
       <table className='list_adalabers'>
         {adalabersHtml}
