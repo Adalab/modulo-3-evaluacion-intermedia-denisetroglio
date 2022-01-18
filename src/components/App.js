@@ -38,9 +38,9 @@ function App() {
     setSpeciality("");
   };
 
-  const adalabersHtml = adalabers.map((listadalabers) => (
-    <tbody>
-      <tr>
+  const adalabersHtml = adalabers.map((listadalabers, index) => (
+    <tbody key={index}>
+      <tr >
         <td>{listadalabers.name}</td>
         <td>{listadalabers.counselor}</td>
         <td>{listadalabers.speciality}</td>
@@ -50,7 +50,7 @@ function App() {
 
   return (
     <main>
-      <header ClassName='header'>
+      <header className='header'>
         <h2 className='search_adalaber'>Buscar una Adalaber:</h2>
         <input
           className='search'
@@ -58,7 +58,6 @@ function App() {
           name='search'
           id='search'
           placeholder='Busque una Adalaber'
-          value='search'
         />
       </header>
 
